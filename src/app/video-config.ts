@@ -13,8 +13,8 @@ export const VIDEO_CONFIG = {
   localPaths: {
     intro: 'assets/projectA/Intro.mp4',
     infographic: 'assets/projectA/Інфографіка.mp4',
-    demo: 'assets/projectA/Демонстрація роботи.mp44',
-    fullVideo: 'assets/projectA/Повне відео.mp44',
+    demo: 'assets/projectA/Демонстрація роботи.mp4',
+    fullVideo: 'assets/projectA/Повне відео.mp4',
     model3d: 'assets/projectA/3д модель з логотипом.mp4'
   }
 };

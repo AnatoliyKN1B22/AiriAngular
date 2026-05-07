@@ -18,6 +18,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -32,7 +34,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npx ng build --configuration production --base-href /
+        run: npx ng build --configuration production --base-href ./
 
       - name: Copy index.html to 404.html
         run: cp dist/airi-angular/browser/index.html dist/airi-angular/browser/404.html
